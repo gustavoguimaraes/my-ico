@@ -1,5 +1,4 @@
-var GustavoCoin = artifacts.require("./GustavoCoin.sol")
-var GustavoCoinCrowdsale = artifacts.require("./GustavoCoinCrowdsale")
+var GustavoCoinCrowdsale = artifacts.require("./GustavoCoinCrowdsale.sol")
 
 module.exports = function(deployer, network, accounts) {
   const startBlock = web3.eth.blockNumber + 2
@@ -7,6 +6,5 @@ module.exports = function(deployer, network, accounts) {
   const rate = new web3.BigNumber(1000)
   const wallet = web3.eth.accounts[0]
 
-  deployer.deploy(GustavoCoin)
   deployer.deploy(GustavoCoinCrowdsale, startBlock, endBlock, rate, wallet)
 };
