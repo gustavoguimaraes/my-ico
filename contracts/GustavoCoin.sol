@@ -1,6 +1,6 @@
 pragma solidity ^0.4.13;
 
-import 'zeppelin-solidity/contracts/token/MintableToken.sol';
+import 'zeppelin-solidity/contracts/token/ERC20/MintableToken.sol';
 
 contract GustavoCoin is MintableToken {
   string public name = "GUSTAVO COIN";
