@@ -1,19 +1,22 @@
-pragma solidity ^0.4.11;
+pragma solidity 0.4.19;
 
 import './GustavoCoin.sol';
-import 'zeppelin-solidity/contracts/crowdsale/Crowdsale.sol';
+import 'zeppelin-solidity/contracts/crowdsale/emission/MintedCrowdsale.sol';
+import 'zeppelin-solidity/contracts/crowdsale/validation/TimedCrowdsale.sol';
 
 
-contract GustavoCoinCrowdsale is Crowdsale {
+contract GustavoCoinCrowdsale is TimedCrowdsale, MintedCrowdsale {
+    function GustavoCoinCrowdsale
+        (
+            uint256 _openingTime,
+            uint256 _closingTime,
+            uint256 _rate,
+            address _wallet,
+            MintableToken _token
+        )
+        public
+        Crowdsale(_rate, _wallet, _token)
+        TimedCrowdsale(_openingTime, _closingTime) {
 
-  function GustavoCoinCrowdsale(uint256 _startTime, uint256 _endTime, uint256 _rate, address _wallet)
-    Crowdsale(_startTime, _endTime, _rate, _wallet) {
-  }
-
-  // creates the token to be sold.
-  // override this method to have crowdsale of a specific MintableToken token.
-  function createTokenContract() internal returns (MintableToken) {
-    return new GustavoCoin();
-  }
-
+        }
 }

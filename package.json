@@ -1,0 +1,26 @@
+{
+    "name": "my-ico",
+    "version": "1.0.0",
+    "description": "Example of creating a crowdsale with OpenZeppelin v1.7.0",
+    "main": "truffle.js",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {
+        "zeppelin-solidity": "1.7.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gustavoguimaraes/my-ico.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gustavoguimaraes/my-ico/issues"
+    },
+    "homepage": "https://github.com/gustavoguimaraes/my-ico#readme"
+}
