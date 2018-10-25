@@ -1,9 +1,9 @@
-pragma solidity 0.4.19;
+pragma solidity 0.4.24;
 
-import 'zeppelin-solidity/contracts/token/ERC20/MintableToken.sol';
+import 'openzeppelin-solidity/contracts/token/ERC20/ERC20Mintable.sol';
 
-contract GustavoCoin is MintableToken {
-  string public name = "GUSTAVO COIN";
-  string public symbol = "GUS";
-  uint256 public decimals = 18;
+contract GustavoCoin is ERC20Mintable {
+    string public name = "GUSTAVO COIN";
+    string public symbol = "GUS";
+    uint8 public decimals = 18;
 }
