@@ -7,7 +7,7 @@
         "test": "test"
     },
     "dependencies": {
-        "zeppelin-solidity": "2.0.0"
+        "openzeppelin-solidity": "2.0.0"
     },
     "devDependencies": {},
     "scripts": {
