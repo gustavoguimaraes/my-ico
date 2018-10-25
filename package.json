@@ -1,13 +1,13 @@
 {
     "name": "my-ico",
     "version": "1.0.0",
-    "description": "Example of creating a crowdsale with OpenZeppelin v1.7.0",
+    "description": "Example of creating a crowdsale with OpenZeppelin v2.0",
     "main": "truffle.js",
     "directories": {
         "test": "test"
     },
     "dependencies": {
-        "zeppelin-solidity": "1.7.0"
+        "zeppelin-solidity": "2.0.0"
     },
     "devDependencies": {},
     "scripts": {
